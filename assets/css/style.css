@@ -1,0 +1,48 @@
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+.nav-item{
+    margin: 0 .6rem;
+    position: relative;
+    text-align: center;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #000000;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: 1px;
+    transition: 0.3s;
+}
+.nav-link:hover::after {
+    width: 50%;
+}
+.nav-item > .active::after{
+    content: '';
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #000000;
+    height: 2px;
+    width: 50%;
+    left: 0;
+    bottom: 1px;
+}
+
+#hero, #about, #skills, #qualification,#tools,#contact{
+    padding: 2rem .3rem;
+}
+.img-skills{
+    max-height: 7rem !important;
+}
+.img-tools{
+    max-height: 5rem;
+}
+.message-area{
+    height: 10rem;
+}
